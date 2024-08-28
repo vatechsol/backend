@@ -5,7 +5,6 @@ const studentSchema=new mongoose.Schema({
    name:{
     type:"string",
     require:true,
-    unique:true
    },
 
   rollNumber:{
