@@ -4,9 +4,7 @@ const stItem=require('../modal/students');
 
 
 routes.post('/student',async(req,res)=>{
-  
-  const {name,rollNumber,college,branch}=req.body;
-  
+    
   const newStudent=new stItem(req.body)
   try{
     const saveItem = await newStudent.save();
